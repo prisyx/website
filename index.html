@@ -1,1 +1,49 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PRISYX</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+min-height:100vh;
+background:#020202;
+display:flex;
+align-items:center;
+justify-content:center;
+font-family:Arial,Helvetica,sans-serif;
+color:white;
+overflow:hidden;
+}
+.hero{
+text-align:center;
+animation:fade 1.8s ease forwards;
+padding:30px;
+}
+img{
+max-width:92vw;
+max-height:78vh;
+object-fit:contain;
+filter:drop-shadow(0 0 35px rgba(255,255,255,.12));
+}
+.coming{
+margin-top:22px;
+letter-spacing:.35em;
+font-size:13px;
+color:#aaa;
+text-transform:uppercase;
+}
+@keyframes fade{
+from{opacity:0;transform:scale(.97)}
+to{opacity:1;transform:scale(1)}
+}
+</style>
+</head>
+<body>
+<div class="hero">
+<img src="hero.png" alt="PRISYX">
+<div class="coming">Coming Soon</div>
+</div>
+</body>
+</html>
